@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Processador de Planilhas</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Bibliotecas necessárias -->
+  <script src="https://cdn.jsdelivr.net/npm/exceljs/dist/exceljs.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+  <!-- Toolbar fixa -->
+  <div class="toolbar">
+    <span id="creditos">Autor: Seu Nome</span>
+    <span id="data"></span>
+  </div>
+
+  <div class="container">
+    <h1>Processador de Planilhas</h1>
+
+    <label for="file-input">Escolha o arquivo .xls/.xlsx:</label>
+    <input type="file" id="file-input" accept=".xls,.xlsx" />
+
+    <label for="funcionalidade">Selecione a funcionalidade:</label>
+    <select id="funcionalidade">
+      <option value="relatorio">Relatório por Laboratório</option>
+      <option value="glosas">Planilha de Glosas</option>
+      <option value="bdp">Consolidação de BDP's</option>
+    </select>
+
+    <button id="executar-btn">Executar</button>
+  </div>
+
+  <script>
+    // Colocar a data atual automaticamente
+    document.getElementById("data").textContent = 
+      "Data: " + new Date().toLocaleDateString("pt-BR");
+  </script>
+
+  <script src="app.js"></script>
+</body>
+</html>
