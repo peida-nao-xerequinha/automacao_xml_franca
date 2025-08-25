@@ -1,66 +1,71 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #000000;
-  padding: 40px;
+ font-family: Arial, sans-serif;
+ background: #000000;
+ padding: 40px;
+ margin: 0;
+ padding-bottom: 50px; /* Adiciona espaço para o rodapé */
 }
 
 .container {
-  background: white;
-  padding: 30px;
-  max-width: 500px;
-  margin: auto;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ background: white;
+ padding: 30px;
+ max-width: 500px;
+ margin: auto;
+ border-radius: 10px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+ text-align: center;
 }
 
 label {
-  display: block;
-  margin-top: 20px;
-  font-weight: bold;
+ display: block;
+ margin-top: 20px;
+ font-weight: bold;
 }
 
 input[type="file"], select {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
+ width: 100%;
+ padding: 8px;
+ margin-top: 5px;
 }
 
 button {
-  margin-top: 25px;
-  padding: 12px;
-  width: 100%;
-  background-color: #0077cc;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
+ margin-top: 25px;
+ padding: 12px;
+ width: 100%;
+ background-color: #0077cc;
+ color: white;
+ border: none;
+ border-radius: 5px;
+ font-weight: bold;
+ cursor: pointer;
 }
 
 button:hover {
-  background-color: #005fa3;
+ background-color: #005fa3;
 }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+/* Estilo para o novo campo de instruções */
+#instrucoes {
+ background-color: #f0f0f0;
+ padding: 15px;
+ border-radius: 5px;
+ margin-top: 20px;
 }
 
-.toolbar {
-  background-color: #333;
-  color: #fff;
-  padding: 8px 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-}
-
-.container {
-  margin-top: 60px; /* espaço pra não ficar embaixo da toolbar */
-  padding: 20px;
+/* Estilos para o rodapé fixo */
+.footer {
+ background-color: #333;
+ color: #fff;
+ padding: 8px 16px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ position: fixed;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ z-index: 1000;
 }
